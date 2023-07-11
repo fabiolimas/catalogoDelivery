@@ -1,0 +1,87 @@
+img.logo {
+    width: 100%;
+}
+
+a.navbar-brand {
+    width: 100px;
+    border-radius: 9px;
+    border: 2px solid #fff;
+    height: auto;
+    display: block;
+}
+
+.header {
+    height: 188px;
+    background-image: url('../images/bgpizza.png');
+    background-attachment:fixed;
+    background-position:top;
+    background-size: cover;
+}
+.header h3, .header li a{
+    text-shadow:2px 2px black;
+    font-weight: 700;
+}
+.media.d-flex {
+    display: flex;
+    margin: 9px;
+    border-bottom: 1px solid #ccc;
+    padding: 6px;
+    position: relative;
+}
+.media.d-flex img {
+    margin-right: 17px;
+}
+.media.d-flex i {
+    position: absolute;
+    right: 0;
+}
+.media.d-flex a {
+   text-decoration:none;
+}
+a.accordion-button i {
+    margin-right: 16px;
+
+}
+a.accordion-button {
+    text-decoration: none;
+}
+.produtos {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+.funcionamento {
+    border: 1px solid #ccc;
+    padding: 7px;
+    margin: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.produtos button {
+    position: absolute;
+    right: 0;
+    top: 33%;
+}
+
+@media(max-width: 450px){
+    .header{
+        height: auto;
+    }
+    .header .container.justify-content-end.p-4 {
+        display: flex;
+        flex-direction: column;
+    }
+    ul.navbar-nav.mt-4 {
+        display: flex;
+        flex-direction: row;
+    }
+    li.nav-item.ms-5.text-light {
+        width: max-content;
+        margin-left: 23px !important;
+
+    }
+}
